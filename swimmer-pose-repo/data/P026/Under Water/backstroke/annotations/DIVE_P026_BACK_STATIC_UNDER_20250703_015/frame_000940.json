@@ -1,0 +1,19 @@
+{
+  "swimmer": "P026",
+  "camera_angle": "Under Water",
+  "stroke": "backstroke",
+  "phase": "full",
+  "source_video": "DIVE_P026_BACK_STATIC_UNDER_20250703_015",
+  "frame_index": 940,
+  "image": {
+    "id": 941,
+    "width": 3840,
+    "height": 2160,
+    "file_name": "DIVE_P026_BACK_STATIC_UNDER_20250703_015/frame_000940.png",
+    "license": 0,
+    "flickr_url": "",
+    "coco_url": "",
+    "date_captured": 0
+  },
+  "annotations": []
+}
