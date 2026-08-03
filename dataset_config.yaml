@@ -8,3 +8,6 @@
 splits:
   P007: train
   P008: valid
+  P011: test
+  P012: test
+  P014: train

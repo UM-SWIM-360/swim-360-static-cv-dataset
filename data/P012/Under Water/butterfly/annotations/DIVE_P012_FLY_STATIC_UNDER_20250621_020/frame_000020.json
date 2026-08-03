@@ -1,0 +1,19 @@
+{
+  "swimmer": "P012",
+  "camera_angle": "Under Water",
+  "stroke": "butterfly",
+  "phase": "full",
+  "source_video": "DIVE_P012_FLY_STATIC_UNDER_20250621_020",
+  "frame_index": 20,
+  "image": {
+    "id": 21,
+    "width": 3840,
+    "height": 2160,
+    "file_name": "DIVE_P012_FLY_STATIC_UNDER_20250621_020/frame_000020.png",
+    "license": 0,
+    "flickr_url": "",
+    "coco_url": "",
+    "date_captured": 0
+  },
+  "annotations": []
+}

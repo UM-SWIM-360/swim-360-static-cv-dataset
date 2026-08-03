@@ -1,0 +1,114 @@
+{
+  "swimmer": "P014",
+  "camera_angle": "Under Water",
+  "stroke": "butterfly",
+  "videos": {
+    "DIVE_P014_FLY_STATIC_UNDER_20250624_007": {
+      "phase": "full",
+      "width": 3840,
+      "height": 2160,
+      "frame_step": 10,
+      "num_frames_annotated": 51,
+      "total_frames_in_json": 505
+    }
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Swimmer",
+      "supercategory": "",
+      "keypoints": [
+        "Nose",
+        "Left Eye",
+        "right eye",
+        "Left Ear",
+        "Right Ear",
+        "Left Shoulder",
+        "Right Shoulder",
+        "Left Elbow",
+        "Right Elbow",
+        "Left Wrist",
+        "Right Wrist",
+        "Left Hip",
+        "Right Hip",
+        "Left Knee",
+        "Right Knee",
+        "Left Ankle",
+        "Right Ankle"
+      ],
+      "skeleton": [
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Swimmer_Box",
+      "supercategory": "",
+      "keypoints": [],
+      "skeleton": []
+    }
+  ]
+}
