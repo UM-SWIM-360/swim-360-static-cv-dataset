@@ -28,7 +28,7 @@ python fetch_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --output_dir 
 
 # 2. Compile the registry + images into a standard COCO dataset
 python compile_coco.py --registry_root . --dataset_config dataset_config.yaml `
-    --output_dir dataset --images_root "[name_of_hf_directory]\test-blurred-images"
+    --output_dir dataset --images_root "[name_of_hf_directory]\blurred-images"
 ```
 
 That's it — `dataset_config.yaml` is already included in the repo (the
