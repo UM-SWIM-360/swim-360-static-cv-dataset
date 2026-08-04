@@ -1,0 +1,19 @@
+{
+  "swimmer": "P026",
+  "camera_angle": "Under Water",
+  "stroke": "breaststroke",
+  "phase": "full",
+  "source_video": "DIVE_P026_BREAST_STATIC_UNDER_20250703_015",
+  "frame_index": 890,
+  "image": {
+    "id": 891,
+    "width": 3840,
+    "height": 2160,
+    "file_name": "DIVE_P026_BREAST_STATIC_UNDER_20250703_015/frame_000890.png",
+    "license": 0,
+    "flickr_url": "",
+    "coco_url": "",
+    "date_captured": 0
+  },
+  "annotations": []
+}
