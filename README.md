@@ -19,7 +19,7 @@ pairs with `<video>/frame_NNNNNN.png` on Hugging Face.
 ## Quickstart
 
 ```bash
-git clone https://github.com/liamkazzopardi/swim360-dive.git
+git clone https://github.com/UM-SWIM-360/swim-360-static-cv-dataset.git
 cd swim360-dive
 pip install opencv-python numpy tqdm pyyaml huggingface_hub
 
