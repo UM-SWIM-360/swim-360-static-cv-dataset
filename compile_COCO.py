@@ -67,10 +67,10 @@ happens to sort first -- that's fragile if the first one is the outlier).
 Usage
 -----
     python compile_coco.py \\
-        --registry_root swimmer-pose-repo/ \\
+        --registry_root . \\
         --dataset_config dataset_config.yaml \\
         --output_dir dataset/ \\
-        --images_root blurred_images/
+        --images_root "[name_of_hf_directory]\blurred_images"
 
 --images_root defaults to "blurred_images" (the output of blur_faces.py),
 since that's the anonymised set you'd actually want to train/ship on. Pass

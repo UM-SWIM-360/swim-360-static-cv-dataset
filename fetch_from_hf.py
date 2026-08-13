@@ -26,18 +26,18 @@ Downloads are resumable: files already present and up to date under
 Usage
 -----
     # Everything
-    python fetch_from_hf.py --repo_id liamkazzopard/swim360-dive --local_dir [name of local folder]
+    python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_dir [name of local folder]
 
     # Just one swimmer's blurred images
-    python fetch_from_hf.py --repo_id liamkazzopard/swim360-dive \\
+    python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset \\
         --swimmer P003 --local_dir [name of local folder]
 
     # Just one swimmer, one camera angle
-    python fetch_from_hf.py --repo_id liamkazzopardi/swim360-dive \\
+    python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset \\
         --swimmer P003 --camera_angle Above_Water --local_dir [name of local folder]
 
     # Raw pattern: only the registry JSONs, no images
-    python fetch_from_hf.py --repo_id liamkazzopardi/swim360-dive \\
+    python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset \\
         --allow_patterns "data/**/*.json" --local_dir [name of local folder]
 
 Now Requires: pip install -U huggingface_hub --break-system-packages

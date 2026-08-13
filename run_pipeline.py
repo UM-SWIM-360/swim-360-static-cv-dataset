@@ -9,10 +9,26 @@ the class of bug we kept hitting: a stale/renamed/divergent copy of a script
 getting run by accident, since everything here always loads from one fixed
 location.
 
+How it works
+------------
+importlib.util.spec_from_file_location() + module_from_spec() load an
+arbitrary .py file as a module by path. exec_module() runs everything in
+that file EXCEPT the `if __name__ == "__main__":` block (the loaded module's
+__name__ isn't "__main__"), so main() is called explicitly afterward. Since
+each script's main() reads sys.argv internally via argparse, sys.argv is set
+here immediately before each call, exactly as if that command had been typed
+directly.
+
+If a step calls sys.exit() (e.g. on a real error), that propagates up and
+stops the whole pipeline here too -- run_step() catches SystemExit
+specifically so you get a clear "which step failed" message instead of a
+raw traceback.
 
 Usage
 -----
-python run_pipeline.py
+Edit the steps at the bottom of this file to match your actual paths/flags,
+then just:
+    python run_pipeline.py
 """
 
 import importlib.util
@@ -53,6 +69,12 @@ def run_step(script_name: str, argv: list[str]) -> None:
 
 if __name__ == "__main__":
     # Edit these to match your real paths/flags.
+
+    run_step("fetch_from_hf.py", [
+            "--repo_id", "UM-SWIM-360/swim360-static-cv-dataset",
+            "--local_dir", "data_static_hf",
+        ])
+    
     run_step("generate_config.py", [
         "--registry_root", ".",
         "--output", "dataset_config.yaml",
@@ -64,7 +86,7 @@ if __name__ == "__main__":
         "--registry_root", ".",
         "--dataset_config", "dataset_config.yaml",
         "--output_dir", "dataset",
-        "--images_root", "blurred_images",
+        "--images_root", "data_static_hf\blurred_images",
     ])
 
     
