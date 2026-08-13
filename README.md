@@ -87,7 +87,7 @@ alongside your custom one.
 
 # Static Dataset — Metrics Summary
 
-**Total frames:** 3,903 | **Total annotations:** 3,757 | **Image resolution:** 3840×2160 (100% of frames, all UHD) ([Hugging Face](https://huggingface.co/datasets/liamkazzopardi/swim360-static-cv-dataset))
+**Total frames:** 3,903 | **Total annotations:** 3,757 | **Image resolution:** 3840×2160 (100% of frames, all UHD) ([Hugging Face](https://huggingface.co/datasets/UM-SWIM-360/swim360-static-cv-dataset))
 
 ---
 
