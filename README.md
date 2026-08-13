@@ -24,7 +24,7 @@ cd swim360-dive
 pip install opencv-python numpy tqdm pyyaml huggingface_hub
 
 # 1. Fetch the images into a folder of your choosing
-python fetch_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --output_dir [name_of_hf_directory]
+python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_dir [name_of_hf_directory]
 
 # 2. Compile the registry + images into a standard COCO dataset
 python compile_coco.py --registry_root . --dataset_config dataset_config.yaml `
