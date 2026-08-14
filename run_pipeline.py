@@ -86,7 +86,7 @@ if __name__ == "__main__":
         "--registry_root", ".",
         "--dataset_config", "dataset_config.yaml",
         "--output_dir", "dataset",
-        "--images_root", "data_static_hf\blurred_images",
+        "--images_root", "data_static_hf\\blurred_images",
     ])
 
     
