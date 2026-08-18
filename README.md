@@ -16,20 +16,21 @@ stays lightweight and diffable (Git-friendly JSON only). The two are matched
 by file path — `data/<swimmer>/<camera_angle>/<stroke>/annotations/<video>/frame_NNNNNN.json`
 pairs with `<video>/frame_NNNNNN.png` on Hugging Face.
 
-## Quickstart
 
+## Quickstart
+On **CMD**:
 ```bash
 git clone https://github.com/UM-SWIM-360/swim-360-static-cv-dataset.git
 cd swim-360-static-cv-dataset
 python -m venv venv
-venv/scripts/activate
+venv\scripts\activate
 pip install -r requirements.txt
 
 # 1. Fetch the images into a folder of your choosing
 python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_dir [name_of_hf_directory]
 
 # 2. Compile the registry + images into a standard COCO dataset
-python compile_coco.py --registry_root . --dataset_config dataset_config.yaml `
+python compile_coco.py --registry_root . --dataset_config dataset_config.yaml ^
     --output_dir dataset --images_root "[name_of_hf_directory]\blurred_images"
 ```
 
@@ -43,6 +44,28 @@ Instead of running scripts individually, 'run_pipeline.py' runs all the necessar
 ```bash
 python run_pipeline.py
 ```
+
+## Potential Issues with 'fetch_from_hf.py'
+If an error 11001 arises at any point during the execution of 'fetch_from_hf.py', stop the execution and delete the local directory that stored the static images.
+This error occurs due to not being logged in to your huggingface account, limiting the amount of images you can download. In the case that you are not logged in, use the following commands
+
+In the virtual environment:
+```bash
+python -m pip install --upgrade huggingface_hub
+```
+Login:
+```bash
+hf auth login
+```
+After running the login command, follow the instructions on screen and run:
+```bash
+python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_dir [name_of_hf_directory]
+```
+**OR**
+```bash
+python run_pipeline.py
+```
+
 ## Dataset conventions
 
 - **Swimmer ID**: `P<number>` (e.g. `P007`)
