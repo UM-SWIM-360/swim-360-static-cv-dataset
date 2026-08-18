@@ -19,8 +19,8 @@ pairs with `<video>/frame_NNNNNN.png` on Hugging Face.
 ## Quickstart
 
 ```bash
-git clone https://github.com/UM-SWIM-360/swim360-static-cv-dataset.git
-cd swim360-dive
+git clone https://github.com/UM-SWIM-360/swim-360-static-cv-dataset.git
+cd swim-360-static-cv-dataset
 pip install -r requirements.txt
 
 # 1. Fetch the images into a folder of your choosing
