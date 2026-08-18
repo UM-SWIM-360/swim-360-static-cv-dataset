@@ -21,7 +21,7 @@ pairs with `<video>/frame_NNNNNN.png` on Hugging Face.
 ```bash
 git clone https://github.com/UM-SWIM-360/swim360-static-cv-dataset.git
 cd swim360-dive
-pip install opencv-python numpy tqdm pyyaml huggingface_hub
+pip install -r requirements.txt
 
 # 1. Fetch the images into a folder of your choosing
 python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_dir [name_of_hf_directory]
