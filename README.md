@@ -177,31 +177,34 @@ alongside your custom one.
 
 Visibility codes: **1 = labeled, occluded/not visible** · **2 = labeled, visible** · **0 = not labeled**. Percentages are of all 3,757 annotations.
 
-| Keypoint | Occluded (1) | Visible (2) | Not labeled (0) | Visible % |
-|---|---|---|---|---|
-| Nose | 2,893 (77.0%) | 864 (23.0%) | 0 | 23.0% |
-| Left Eye | 3,443 (91.6%) | 313 (8.3%) | 1 (0.0%) | 8.3% |
-| Right Eye | 3,068 (81.7%) | 689 (18.3%) | 0 | 18.3% |
-| Left Ear | 3,625 (96.5%) | 132 (3.5%) | 0 | 3.5% |
-| Right Ear | 3,472 (92.4%) | 285 (7.6%) | 0 | 7.6% |
-| Left Shoulder | 2,807 (74.7%) | 950 (25.3%) | 0 | 25.3% |
-| Right Shoulder | 2,406 (64.0%) | 1,351 (36.0%) | 0 | 36.0% |
-| Left Elbow | 2,516 (67.0%) | 1,241 (33.0%) | 0 | 33.0% |
-| Right Elbow | 2,287 (60.9%) | 1,470 (39.1%) | 0 | 39.1% |
-| Left Wrist | 2,442 (65.0%) | 1,315 (35.0%) | 0 | 35.0% |
-| Right Wrist | 2,247 (59.8%) | 1,510 (40.2%) | 0 | 40.2% |
-| Left Hip | 2,696 (71.8%) | 1,061 (28.2%) | 0 | 28.2% |
-| Right Hip | 2,194 (58.4%) | 1,563 (41.6%) | 0 | 41.6% |
-| Left Knee | 2,224 (59.2%) | 1,533 (40.8%) | 0 | 40.8% |
-| Right Knee | 2,023 (53.8%) | 1,734 (46.2%) | 0 | 46.2% |
-| Left Ankle | 2,216 (59.0%) | 1,541 (41.0%) | 0 | 41.0% |
-| Right Ankle | 1,980 (52.7%) | 1,777 (47.3%) | 0 | 47.3% |
+| Keypoint | Occluded (1) | Visible (2) | Not labeled (0) |
+|---|---|---|---|
+| Nose | 2,893 (77.0%) | 864 (23.0%) | 0 | 
+| Left Eye | 3,443 (91.6%) | 313 (8.3%) | 1 (0.0%) | 
+| Right Eye | 3,068 (81.7%) | 689 (18.3%) | 0 | 
+| Left Ear | 3,625 (96.5%) | 132 (3.5%) | 0 | 
+| Right Ear | 3,472 (92.4%) | 285 (7.6%) | 0 | 
+| Left Shoulder | 2,807 (74.7%) | 950 (25.3%) | 0 | 
+| Right Shoulder | 2,406 (64.0%) | 1,351 (36.0%) | 0 | 
+| Left Elbow | 2,516 (67.0%) | 1,241 (33.0%) | 0 | 
+| Right Elbow | 2,287 (60.9%) | 1,470 (39.1%) | 0 | 
+| Left Wrist | 2,442 (65.0%) | 1,315 (35.0%) | 0 | 
+| Right Wrist | 2,247 (59.8%) | 1,510 (40.2%) | 0 | 
+| Left Hip | 2,696 (71.8%) | 1,061 (28.2%) | 0 | 
+| Right Hip | 2,194 (58.4%) | 1,563 (41.6%) | 0 | 
+| Left Knee | 2,224 (59.2%) | 1,533 (40.8%) | 0 | 
+| Right Knee | 2,023 (53.8%) | 1,734 (46.2%) | 0 | 
+| Left Ankle | 2,216 (59.0%) | 1,541 (41.0%) | 0 | 
+| Right Ankle | 1,980 (52.7%) | 1,777 (47.3%) | 0 | 
+
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/keypoint_visibility.png?raw=true)
 
 **Notes:**
 - **Facial keypoints (eyes, ears) are the least visible** — left ear is visible in only 3.5% of annotations, left eye in 8.3%. This tracks with swimmers facing away from camera or submerged/goggled.
 - **Right-side joints are consistently more visible than their left-side counterparts** (e.g., right ankle 47.3% vs. left ankle 41.0%; right knee 46.2% vs. left knee 40.8%). This is a systematic asymmetry worth checking against camera placement/swimmer orientation conventions — it may reflect a real camera-side bias rather than annotation error.
 - **Lower body (hips/knees/ankles) is more consistently visible than upper body facial features**, and right wrist/elbow are the most visible upper-limb points (~39–40%), likely reflecting stroke mechanics where the trailing/recovery arm faces the underwater camera more often.
-- A breakdown of visibility **by stroke** and **by camera view** is also available in the source registry (`kp_visibility_by_stroke`, `kp_visibility_by_camera`) if you want that level of granularity added to the report — notably, above-water hip/knee/ankle visibility is near 100% (only 1–3 unlabeled out of 1,216 above-water annotations), while underwater visibility drops sharply for the same joints, confirming camera view is the dominant driver of occlusion.
+
+
 
 ---
 
