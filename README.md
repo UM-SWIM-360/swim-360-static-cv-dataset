@@ -218,9 +218,9 @@ Visibility codes: **1 = labeled, occluded/not visible** · **2 = labeled, visibl
 Of 120 possible (swimmer × camera × stroke × phase) combinations, **43 are covered and 77 are gaps (64.2%)**. Patterns in the gaps:
 
 - **P007 and P008** have full above-water coverage across all 4 strokes but are missing (or nearly missing) underwater coverage for several strokes.
-- **P011, P016, P021, P022, P023, P026, P027, P028, P030** have **no above-water footage at all** — every above-water combination for these 9 swimmers is a gap.
+- **P011, P012, P016, P021, P022, P023, P026, P027, P028, P030 — no above-water footage at all** — every above-water combination for these 9 swimmers is a gap.
 - Only **P007, P008, and P014** have any above-water representation.
-- **P012 is missing above-water entirely and underwater-backstroke** specifically.
+
 
 This means stroke/camera comparisons that hold swimmer identity constant are only reliably possible for P007, P008, and P014 (the three swimmers with both camera views). For everyone else, camera view and swimmer identity are confounded.
 
