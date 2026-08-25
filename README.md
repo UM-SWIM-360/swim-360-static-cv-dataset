@@ -136,49 +136,26 @@ alongside your custom one.
 
 ## 2. Coverage by Swimmer
 
-| Swimmer | Frames | % of frames | Annotations | Videos |
-|---|---|---|---|---|
-| P007 | 692 | 17.7% | 566 | 6 |
-| P014 | 588 | 15.1% | 582 | 8 |
-| P008 | 523 | 13.4% | 521 | 4 |
-| P015 | 355 | 9.1% | 355 | 5 |
-| P012 | 284 | 7.3% | 280 | 3 |
-| P024 | 248 | 6.4% | 248 | 3 |
-| P026 | 192 | 4.9% | 182 | 2 |
-| P030 | 175 | 4.5% | 175 | 3 |
-| P028 | 161 | 4.1% | 162 | 2 |
-| P027 | 158 | 4.0% | 158 | 2 |
-| P022 | 148 | 3.8% | 146 | 2 |
-| P023 | 121 | 3.1% | 120 | 1 |
-| P016 | 98 | 2.5% | 100 | 1 |
-| P021 | 85 | 2.2% | 85 | 1 |
-| P011 | 75 | 1.9% | 77 | 1 |
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/frames_by_swimmer.png?raw=true)
 
-**Notes:** P007, P014 and P008 together account for **46.2%** of all frames — the dataset is fairly top-heavy on three swimmers. P011, P021, and P016 are the thinnest slices (each backed by a single source video).
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/videos_by_swimmer.png?raw=true)
 
 ---
 
 ## 3. Coverage by Stroke
 
-| Stroke | Frames | % of frames | Videos |
-|---|---|---|---|
-| Backstroke | 1,120 | 28.7% | 11 |
-| Breaststroke | 1,096 | 28.1% | 12 |
-| Freestyle | 970 | 24.9% | 12 |
-| Butterfly | 717 | 18.4% | 9 |
-
-Reasonably balanced across strokes; butterfly is the smallest category by both frames and videos.
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/frames_by_stroke.png?raw=true)
 
 ---
 
 ## 4. Coverage by Camera View
 
-| Camera | Frames | % of frames | Videos |
-|---|---|---|---|
-| Under Water | 2,557 | 65.5% | 32 |
-| Above Water | 1,346 | 34.5% | 12 |
+| Camera  | Videos |
+|---|---|
+| Under Water | 32 |
+| Above Water | 12 |
 
-Underwater footage dominates ~2:1 over above-water, both in frame count and source video count.
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/frames_by_camera.png?raw=true)
 
 ---
 
