@@ -180,7 +180,7 @@ Visibility codes: **1 = labeled, occluded/not visible** · **2 = labeled, visibl
 | Keypoint | Occluded (1) | Visible (2) | Not labeled (0) |
 |---|---|---|---|
 | Nose | 2,893 (77.0%) | 864 (23.0%) | 0 | 
-| Left Eye | 3,443 (91.6%) | 313 (8.3%) | 1 (0.0%) | 
+| Left Eye | 3,443 (91.6%) | 313 (8.3%) | 1 (0.1%) | 
 | Right Eye | 3,068 (81.7%) | 689 (18.3%) | 0 | 
 | Left Ear | 3,625 (96.5%) | 132 (3.5%) | 0 | 
 | Right Ear | 3,472 (92.4%) | 285 (7.6%) | 0 | 
@@ -208,8 +208,13 @@ Visibility codes: **1 = labeled, occluded/not visible** · **2 = labeled, visibl
 
 ---
 
-## 8. Participant × Camera × Stroke Coverage Gaps
+## 8. Participant × Stroke Coverage Gaps
 
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/coverage_heatmap.png?raw=true)
+
+---
+
+## 9. Participant × Camera x Stroke Coverage Gaps
 Of 120 possible (swimmer × camera × stroke × phase) combinations, **43 are covered and 77 are gaps (64.2%)**. Patterns in the gaps:
 
 - **P007 and P008** have full above-water coverage across all 4 strokes but are missing (or nearly missing) underwater coverage for several strokes.
