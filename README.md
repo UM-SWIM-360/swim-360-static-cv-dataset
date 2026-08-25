@@ -161,42 +161,15 @@ alongside your custom one.
 
 ## 5. Annotation Density (swimmers labeled per frame)
 
-| Swimmers per frame | Frames | % of frames |
-|---|---|---|
-| 0 (no swimmer annotated) | 157 | 4.0% |
-| 1 | 3,735 | 95.7% |
-| 2 | 11 | 0.3% |
-
-The vast majority of frames are single-swimmer. The 157 zero-annotation frames are worth auditing — likely empty/transition frames that should be confirmed as intentional negatives rather than missed annotations.
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/annotations_per_frame.png?raw=true)
 
 ---
 
 ## 6. Keypoint Completeness per Annotation
 
-Out of a 17-point skeleton (COCO-style: nose, eyes, ears, shoulders, elbows, wrists, hips, knees, ankles):
+![alt text](https://github.com/UM-SWIM-360/swim-360-static-cv-dataset/blob/main/assets/images/distributions/keypoints_per_annotation.png?raw=true)
 
-| Keypoints labeled | Annotations | % of annotations |
-|---|---|---|
-| 0 (bbox-only, all keypoints occluded) | 517 | 13.8% |
-| 1 | 191 | 5.1% |
-| 2 | 266 | 7.1% |
-| 3 | 342 | 9.1% |
-| 4 | 358 | 9.5% |
-| 5 | 355 | 9.4% |
-| 6 | 302 | 8.0% |
-| 7 | 385 | 10.2% |
-| 8 | 374 | 10.0% |
-| 9 | 258 | 6.9% |
-| 10 | 167 | 4.4% |
-| 11 | 116 | 3.1% |
-| 12 | 66 | 1.8% |
-| 13 | 43 | 1.1% |
-| 14 | 9 | 0.2% |
-| 15 | 3 | 0.1% |
-| 16 | 1 | 0.0% |
-| 17 (fully labeled) | 4 | 0.1% |
 
-**Notes:** Only **4 annotations (0.1%)** have the complete 17-point skeleton — expected for underwater swimming, where limbs are routinely self-occluded or out of frame. **13.8%** of annotations are bbox-only with no pose keypoints at all. The distribution peaks around 4–8 keypoints, consistent with partial-body visibility being the norm rather than the exception.
 
 ---
 
@@ -232,17 +205,7 @@ Visibility codes: **1 = labeled, occluded/not visible** · **2 = labeled, visibl
 
 ---
 
-## 8. Video-Level Coverage
-
-| Dimension | Breakdown |
-|---|---|
-| By stroke | Breaststroke 12, Freestyle 12, Backstroke 11, Butterfly 9 |
-| By camera | Under Water 32, Above Water 12 |
-| By swimmer | P014 leads with 8 videos; P011, P016, P021, P023 have only 1 each |
-
----
-
-## 9. Participant × Camera × Stroke Coverage Gaps
+## 8. Participant × Camera × Stroke Coverage Gaps
 
 Of 120 possible (swimmer × camera × stroke × phase) combinations, **43 are covered and 77 are gaps (64.2%)**. Patterns in the gaps:
 
