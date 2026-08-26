@@ -69,6 +69,45 @@ python fetch_from_hf.py --repo_id UM-SWIM-360/swim360-static-cv-dataset --local_
 python run_pipeline.py
 ```
 
+### Issue: `xet` backend rate limit (429) during dataset download
+
+**Symptom:**
+```
+ConnectionError: Network error: Request error: HTTP status client error (429 Too Many Requests), domain: https://huggingface.co/api/datasets/UM-SWIM-360/swim-360-dynamic-cv-dataset/xet-read-token/...
+```
+Occurs partway through `fetch_from_hf.py` (`snapshot_download`), often after downloading most of the dataset (e.g. 14.8/14.9GB).
+
+**Cause:** Hugging Face's `xet` storage accelerator rate-limits aggressively on datasets with many files, independent of normal Hub rate limits.
+
+**Fix:** Disable the `xet` backend before running the pipeline, falling back to the standard HTTP resolver:
+```powershell
+$env:HF_HUB_DISABLE_XET = "1"
+python run_pipeline.py
+```
+`snapshot_download` with `local_dir` skips already-downloaded files, so re-running resumes rather than restarting.
+
+---
+
+### Issue: `504 Gateway Timeout` on individual file downloads
+
+**Symptom:**
+```
+huggingface_hub.errors.HfHubHTTPError: Server error '504 Gateway Timeout' for url 'https://huggingface.co/datasets/UM-SWIM-360/swim-360-dynamic-cv-dataset/resolve/.../blurred_images/P010/Under Water/backstroke/.../frame_000110.png'
+```
+Occurs on a single file mid-download (with `HF_HUB_DISABLE_XET=1` set).
+
+**Cause:** Transient CDN timeout on Hugging Face's side for one specific file request — not a rate limit, not a local config issue. With ~18k files being fetched, occasional one-off failures are expected.
+
+**Fix:** Simply re-run the pipeline; `snapshot_download` resumes from where it left off:
+```powershell
+python run_pipeline.py
+```
+If timeouts recur frequently, increase the per-request timeout:
+```powershell
+$env:HF_HUB_DOWNLOAD_TIMEOUT = "60"
+```
+
+
 ## Dataset conventions
 
 - **Swimmer ID**: `P<number>` (e.g. `P007`)
