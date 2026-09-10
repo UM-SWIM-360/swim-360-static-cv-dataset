@@ -272,7 +272,7 @@ If you use this dataset, please cite it as follows:
 ```bibtex
 @misc{camilleri2026swim360,
   author       = {Camilleri, Vanessa and Seychell, Dylan and Montebello, Matthew and Azzopardi, Liam and Bartolo, Matthias and Camilleri, Reno Yuri and Pace, Daniel and Fialovszky, Mark and Gineste, Thomas and Scicluna, Justine and Aquilina, Gianluca},
-  title        = {{SWIM-360 Static CV Dataset}},
+  title        = {{SWIM-360 Static Camera Setup Computer Vision Swimmer Pose Estimation Dataset}},
   year         = {2026},
   publisher    = {GitHub},
   howpublished = {\url{https://github.com/UM-SWIM-360/swim-360-static-cv-dataset}},
