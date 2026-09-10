@@ -271,7 +271,7 @@ If you use this dataset, please cite it as follows:
 
 ```bibtex
 @misc{camilleri2026swim360,
-  author       = {Camilleri, Vanessa and Bartolo, Matthias and Camilleri, Reno Yuri and Azzopardi, Liam and Pace, Daniel and Fialovszky, Mark},
+  author       = {Camilleri, Vanessa and Seychell, Dylan and Montebello, Matthew and Azzopardi, Liam and Bartolo, Matthias and Camilleri, Reno Yuri and Pace, Daniel and Fialovszky, Mark and Gineste, Thomas and Scicluna, Justine and Aquilina, Gianluca},
   title        = {{SWIM-360 Static CV Dataset}},
   year         = {2026},
   publisher    = {GitHub},
