@@ -265,3 +265,17 @@ This means stroke/camera comparisons that hold swimmer identity constant are onl
 
 ---
 
+## Citation
+
+If you use this dataset, please cite it as follows:
+
+```bibtex
+@misc{camilleri2026swim360,
+  author       = {Camilleri, Vanessa and Bartolo, Matthias and Camilleri, Reno Yuri and Azzopardi, Liam and Pace, Daniel and Fialovszky, Mark},
+  title        = {{SWIM-360 Static CV Dataset}},
+  year         = {2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/UM-SWIM-360/swim-360-static-cv-dataset}},
+  note         = {Accessed: 2026-09-10}
+}
+```
