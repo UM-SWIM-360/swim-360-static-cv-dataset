@@ -7,7 +7,17 @@
 
 splits:
   P007: train
-  P008: valid
-  P011: test
-  P012: test
-  P014: train
+  P008: test
+  P011: valid
+  P012: train
+  P014: valid
+  P015: train
+  P016: test
+  P021: train
+  P022: train
+  P023: train
+  P024: train
+  P026: test
+  P027: valid
+  P028: train
+  P030: train
