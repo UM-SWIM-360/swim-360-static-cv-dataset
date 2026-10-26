@@ -1,4 +1,4 @@
-# SWIM-360 Static Camera Setup Computer Vision Swimmer Pose Estimation Dataset
+# SWIM-360 Pose: Static Camera Setup Computer Vision Swimmer Pose Estimation Dataset
 
 COCO-17 keypoint annotations for swimmer pose estimation, captured from a
 fixed lane camera setup (full, non-segmented strokes), above and below
