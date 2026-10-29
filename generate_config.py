@@ -29,7 +29,7 @@ tie-breaking among swimmers with exactly equal frame counts.
 
 Usage
 -----
-    python generate_split_config.py \\
+    python generate_config.py \\
         --registry_root swimmer-pose-repo/ \\
         --output dataset_config.yaml \\
         --train_ratio 0.7 --valid_ratio 0.15 --test_ratio 0.15
