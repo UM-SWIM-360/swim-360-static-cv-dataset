@@ -66,7 +66,7 @@ happens to sort first -- that's fragile if the first one is the outlier).
 
 Usage
 -----
-    python compile_coco.py \\
+    python compile_COCO.py \\
         --registry_root . \\
         --dataset_config dataset_config.yaml \\
         --output_dir dataset/ \\
