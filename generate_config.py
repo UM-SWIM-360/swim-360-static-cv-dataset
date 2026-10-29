@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-generate_split_config.py
+generate_config.py
 =========================
 One-time (or occasional) bootstrap: computes a participant-disjoint
 train/valid/test split over the swimmers in the registry and writes
